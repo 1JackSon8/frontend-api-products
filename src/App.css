@@ -1,0 +1,234 @@
+@import url('Normalize.css');
+
+* {
+  margin:0;
+  padding: 0;
+  color: #50525E;
+  letter-spacing: 0.5px;
+}
+
+body {
+  margin-top: 60px;
+  background-color:  #F9FAFB;
+}
+
+p {
+  font-family: "Arial";
+  font-size: 0.9em;
+  margin: 8px;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  padding-top: 7px;
+  font-family: "ms reference", sans-serif;
+  text-align: center;
+  
+  font-size: 1.3em;
+  font-weight: 150;
+  margin: 4px 0 3px;
+}
+
+li {
+  list-style: none;
+}
+
+button, a {
+  border: 2px solid #D2CCCC;
+  font-size: 0.9em;
+  padding: 6px 16px;
+  border-radius: 8px;
+  background-color: #F9FAFB;
+  text-decoration: none;
+}
+
+/*Nav*/
+
+nav {
+  position:fixed;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  top:0
+}
+
+nav ul {
+  display: flex;
+  margin: 14px 15px 0 15px;
+}
+
+nav ul li {
+  width: 50%;
+}
+
+nav ul li a {
+  display: flex;
+  margin-left: 0px;
+  justify-content: center;
+}
+
+nav ul li:first-child a {
+  border-radius: 8px 0 0 8px;
+  color: #F2F3F8;
+  background-color: #696464;
+  border-color: #696464;
+}
+
+nav ul li:first-child a:hover {
+  background-color: #D2CCCC;
+  border-color: #D2CCCC;
+  color: #50525E;
+}
+
+nav ul li:first-child a:focus {
+  background-color: #D2CCCC;
+  border-color: #D2CCCC;
+  color: #50525E;
+}
+
+nav ul li:last-child a {
+  border-radius: 0 8px 8px 0;
+}
+
+nav ul li:last-child a:hover {
+  background-color: #D2CCCC;
+}
+
+nav ul li:last-child a:focus {
+  background-color: #D2CCCC;
+}
+
+/*/nav*/
+
+/*products*/
+
+body > div > ul  {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+body > div > ul li a {
+  background-color: #EDF0F3;
+  border: none;
+  border-radius: none;
+  padding: 0  0 14px 0;
+  display: block;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  margin: 0 2px 4px 2px;
+}
+
+body > div > ul li button {
+  width: 45%;
+}
+
+body > div > ul li button:hover {
+  
+  background-color: #D3D4D5 ;
+  border-color: #D3D4D5;
+}
+
+body > div > ul li button:last-child {
+  background-color: #747694;
+  border-color: #747694;
+  color: #F2F3F8;
+}
+
+body > div > ul li button:last-child:hover {
+  background-color: #8F90A8;
+  border-color: #8F90A8;
+}
+
+body > div > ul li div {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*/products*/
+
+/*************************************************************/
+
+@media all and (min-width: 768px) {
+  
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+   font-size: 0.9em;
+    padding-left: 3px;
+  }
+
+  /*nav*/
+
+  nav {
+    position:fixed;
+    background-color: gray;
+    height: 65px;
+    width: 100%;
+    top:0
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    margin: 15px 30px;
+  }
+  
+  nav ul li {
+    margin-top: 5px;
+    width: 150px;
+    display: inline;
+  }
+  
+  nav ul li a {
+    display: inline;
+    justify-content: flex-start;
+  }
+
+  nav ul li:first-child a, nav ul li:last-child a {
+    border-radius: 8px;
+  }
+
+  /*/nav*/
+
+  body > div {
+    margin: 80px 0 10px 0;
+  }
+
+  body > div > ul li {
+    flex-basis: 50%;
+  }
+
+  body > div > ul li button {
+    font-size: 0.8em;
+  }
+
+}
+
+@media all and (min-width: 992px) {
+  body > div > ul li {
+    flex-basis: 33.33%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  body > div > ul li {
+    flex-basis: 25%;
+  }
+
+}
+
+/************************************/
+
+.pageNotFound > div > h1, .pageNotFound > div > p {
+	text-align: center;
+}
+
+.pageNotFound > div {
+	margin-top:60px;
+}
